@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>O Fabryce &amp; Historia | MAT-MAR &amp; Wamet Polska</title>
+  <meta name="description" content="Poznaj tradycję polskiej fabryki okuć meblowych MAT-MAR i Wamet Polska. Ponad 20 lat doświadczenia w tłoczeniu stali, park maszynowy w Polance k. Myślenic."/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600;700;800&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    .font-display-lg, .text-display-lg { font-family: 'Chivo', sans-serif; font-size: clamp(2rem, 5vw, 52px); line-height: clamp(2.4rem, 5.5vw, 60px); font-weight: 800; letter-spacing: -0.03em; text-wrap: balance; }
+    .font-headline-lg, .text-headline-lg { font-family: 'Chivo', sans-serif; font-size: clamp(1.6rem, 4vw, 38px); line-height: clamp(2rem, 4.5vw, 46px); font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+    .font-headline-md, .text-headline-md { font-family: 'Chivo', sans-serif; font-size: clamp(1.25rem, 3vw, 26px); line-height: clamp(1.65rem, 3.5vw, 34px); font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+    .font-headline-sm, .text-headline-sm { font-family: 'Chivo', sans-serif; font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; }
+    .font-body-lg, .text-body-lg { font-family: 'IBM Plex Sans', sans-serif; font-size: 17px; line-height: 26px; font-weight: 400; }
+    .font-body-md, .text-body-md { font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; line-height: 24px; font-weight: 400; }
+    .font-body-sm, .text-body-sm { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; line-height: 20px; font-weight: 400; }
+    .font-label-lg, .text-label-lg { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; line-height: 20px; font-weight: 600; }
+    .font-label-md, .text-label-md { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; line-height: 18px; font-weight: 600; }
+    .font-label-sm, .text-label-sm { font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; line-height: 16px; font-weight: 600; }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:font-semibold focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-white">
+    Przejdź bezpośrednio do treści
+  </a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-2">
+      <div class="flex items-center gap-6 xl:gap-10">
+        <a class="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded p-1 group shrink-0" href="index.html" aria-label="MAT-MAR - Strona główna">
+          <img src="logo.webp" alt="MAT-MAR" class="h-10 sm:h-11 lg:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" />
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-space-lg" aria-label="Nawigacja główna">
+        <a class="font-label-md text-label-md text-slate-800 hover:text-blue-700 font-semibold transition-colors py-space-sm inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded" href="kategorie.html">
+          <i data-lucide="book-open" class="w-4 h-4" aria-hidden="true"></i>
+          <span>Katalog Okuć</span>
+        </a>
+        <a class="font-label-md text-label-md text-slate-800 hover:text-blue-700 font-semibold transition-colors py-space-sm inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded" href="park-maszynowy.html">
+          <i data-lucide="factory" class="w-4 h-4" aria-hidden="true"></i>
+          <span>Park Maszynowy &amp; OEM</span>
+        </a>
+        <a class="py-space-sm text-blue-700 font-label-lg font-bold border-b-2 border-blue-600 transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded" href="o-nas.html">
+          <i data-lucide="shield-check" class="w-4 h-4" aria-hidden="true"></i>
+          <span>O Fabryce</span>
+        </a>
+        <a class="font-label-md text-label-md text-slate-800 hover:text-blue-700 font-semibold transition-colors py-space-sm inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded" href="kontakt.html">
+          <i data-lucide="map-pin" class="w-4 h-4" aria-hidden="true"></i>
+          <span>Lokalizacja &amp; Kontakt</span>
+        </a>
+      </nav>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-space-md">
+        <a class="hidden sm:flex items-center gap-2 text-right group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded p-1" href="tel:+48539179580" aria-label="Zadzwoń do fabryki: +48 539 179 580">
+          <div class="w-8 h-8 rounded bg-blue-50 flex items-center justify-center text-blue-700 group-hover:bg-blue-100 transition-colors shrink-0">
+            <i data-lucide="phone-call" class="w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-slate-700 font-medium">Zadzwoń do fabryki</span>
+            <span class="font-label-md text-label-md text-blue-700 font-bold">+48 539 179 580</span>
+          </div>
+        </a>
+        <a class="inline-flex items-center justify-center gap-1.5 bg-blue-600 text-white px-3 sm:px-space-lg py-2 font-label-md text-label-md rounded hover:bg-blue-700 active:scale-[0.98] active:translate-y-px transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2" href="koszyk.html" aria-label="Koszyk zapytania ofertowego">
+          <i data-lucide="shopping-cart" class="w-4 h-4" aria-hidden="true"></i>
+          <span class="hidden min-[400px]:inline">Zapytanie B2B</span>
+          <span id="navCartBadge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-[11px] font-bold bg-white text-blue-700 rounded-full shadow-sm">0</span>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuOpenBtn" type="button" aria-controls="mobileDrawer" aria-expanded="false" aria-label="Otwórz menu nawigacji" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-slate-200 bg-slate-50 text-slate-700 hover:text-blue-700 hover:bg-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 transition-colors">
+          <i data-lucide="menu" class="w-5 h-5" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Side Drawer Navigation -->
+  <div id="mobileDrawerBackdrop" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 ease-out" aria-hidden="true"></div>
+
+  <div id="mobileDrawer" class="fixed top-0 right-0 bottom-0 w-[320px] max-w-[85vw] bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between overflow-y-auto" role="dialog" aria-modal="true" aria-label="Menu nawigacyjne" aria-hidden="true" tabindex="-1">
+    <div>
+      <!-- Drawer Header -->
+      <div class="p-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+        <a class="flex items-center" href="index.html" aria-label="MAT-MAR - Strona główna">
+          <img src="logo.webp" alt="MAT-MAR" class="h-9 sm:h-10 w-auto object-contain" />
+        </a>
+        <button id="mobileMenuCloseBtn" type="button" class="w-9 h-9 flex items-center justify-center rounded text-slate-500 hover:text-slate-900 hover:bg-slate-200/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 transition-colors" aria-label="Zamknij menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Cart Bar in Drawer -->
+      <div class="p-3 bg-blue-50/60 border-b border-blue-100">
+        <a href="koszyk.html" class="flex items-center justify-between px-3.5 py-2.5 bg-blue-600 text-white rounded font-label-md text-label-md hover:bg-blue-700 transition-colors shadow-sm">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shopping-cart" class="w-4 h-4" aria-hidden="true"></i>
+            <span>Koszyk Wyceny B2B</span>
+          </div>
+          <span id="drawerCartBadge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-[11px] font-bold bg-white text-blue-700 rounded-full">0</span>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="p-4 space-y-1 font-medium text-slate-700 text-sm" aria-label="Nawigacja mobilna">
+        <a href="index.html" class="flex items-center gap-3 px-3.5 py-3 rounded-lg hover:bg-slate-100 hover:text-blue-700 transition-colors">
+          <i data-lucide="home" class="w-4 h-4 text-slate-500"></i>
+          <span>Strona Główna</span>
+        </a>
+        <div class="pt-1">
+          <a href="kategorie.html" class="flex items-center justify-between px-3.5 py-3 rounded-lg hover:bg-slate-100 hover:text-blue-700 transition-colors">
+            <div class="flex items-center gap-3">
+              <i data-lucide="book-open" class="w-4 h-4 text-slate-500"></i>
+              <span>Katalog Okuć</span>
+            </div>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-blue-100 text-blue-800">Oferta</span>
+          </a>
+          <!-- Sub-categories -->
+          <div class="pl-4 space-y-1 mt-1 border-l-2 border-slate-100 ml-5">
+            <a href="kategoria-zawiasy.html" class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-slate-100 hover:text-blue-700 text-xs transition-colors">
+              <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-400"></i>
+              <span>Zawiasy Meblowe</span>
+            </a>
+            <a href="produkt-zawias-clip-on.html" class="flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-blue-700 text-[11px] text-slate-500 transition-colors">
+              <i data-lucide="corner-down-right" class="w-3 h-3 text-slate-400"></i>
+              <span>Zawias Clip-On 110° H-0</span>
+            </a>
+          </div>
+        </div>
+        <a href="park-maszynowy.html" class="flex items-center gap-3 px-3.5 py-3 rounded-lg hover:bg-slate-100 hover:text-blue-700 transition-colors">
+          <i data-lucide="factory" class="w-4 h-4 text-slate-500"></i>
+          <span>Park Maszynowy &amp; OEM</span>
+        </a>
+        <a href="o-nas.html" class="flex items-center gap-3 px-3.5 py-3 rounded-lg bg-blue-50 text-blue-700 font-bold transition-colors">
+          <i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i>
+          <span>O Fabryce</span>
+        </a>
+        <a href="kontakt.html" class="flex items-center gap-3 px-3.5 py-3 rounded-lg hover:bg-slate-100 hover:text-blue-700 transition-colors">
+          <i data-lucide="map-pin" class="w-4 h-4 text-slate-500"></i>
+          <span>Lokalizacja &amp; Kontakt</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Drawer Footer / Quick Contact -->
+    <div class="p-4 border-t border-slate-200 bg-slate-50 space-y-3">
+      <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Dział Handlowy &amp; B2B</div>
+      <a href="tel:+48539179580" class="flex items-center gap-2.5 text-sm text-slate-800 hover:text-blue-700 font-semibold transition-colors">
+        <div class="w-8 h-8 rounded bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <div class="text-[11px] text-slate-500 font-normal">Zadzwoń do fabryki</div>
+          <div class="text-blue-700 font-bold">+48 539 179 580</div>
+        </div>
+      </a>
+      <a href="mailto:wamet@wamet.biz.pl" class="flex items-center gap-2.5 text-xs text-slate-600 hover:text-blue-700 transition-colors">
+        <div class="w-8 h-8 rounded bg-slate-200/80 text-slate-700 flex items-center justify-center shrink-0">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <div class="text-[11px] text-slate-500 font-normal">E-mail zapytań ofertowych</div>
+          <div class="font-medium text-slate-800">wamet@wamet.biz.pl</div>
+        </div>
+      </a>
+      <div class="pt-2 text-[11px] text-slate-500 border-t border-slate-200 flex items-center gap-1.5">
+        <i data-lucide="clock" class="w-3.5 h-3.5 shrink-0 text-slate-400"></i>
+        <span>Polanka 309, Myślenice (Pn–Pt 7–16)</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" class="w-full bg-surface">
+    <!-- Hero Banner -->
+    <div class="bg-slate-900 text-white py-14 border-b border-slate-800 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-gutter relative z-10">
+        <nav class="flex items-center gap-2 text-slate-400 font-label-sm text-label-sm mb-4" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-white transition-colors">Strona Główna</a>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          <span class="text-blue-400 font-semibold">O Fabryce &amp; Historia</span>
+        </nav>
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 text-blue-300 font-label-sm font-bold rounded">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            <span>TRADYCJA PRZEMYSŁOWA OD 2004 ROKU</span>
+          </div>
+          <h1 class="font-display-lg text-display-lg text-white font-extrabold tracking-tight">
+            Polska Fabryka Okuć Meblowych i Podzespołów Stalowych
+          </h1>
+          <p class="font-body-lg text-slate-300 leading-relaxed">
+            Od ponad dwóch dekad zakład produkcyjny w Polance k. Myślenic dostarcza najwyższej klasy komponenty mechaniczne i okucia dla wiodących producentów mebli skrzyniowych, tapicerowanych i biurowych.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Factory Pillars -->
+    <div class="max-w-7xl mx-auto px-gutter py-14">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <div class="bg-white border border-slate-200 p-8 rounded shadow-sm space-y-4">
+          <div class="w-12 h-12 bg-blue-50 text-blue-700 flex items-center justify-center rounded">
+            <i data-lucide="history" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold">20+ Lat Doświadczenia</h3>
+          <p class="font-body-md text-slate-600">
+            Firma założona przez Władysława Marca w 2004 roku rozwijała się jako rzetelny partner technologiczny dla zakładów stolarskich i fabryk mebli w całej Małopolsce i Europie.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 p-8 rounded shadow-sm space-y-4">
+          <div class="w-12 h-12 bg-blue-50 text-blue-700 flex items-center justify-center rounded">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold">Atestowana Stal Zimnowalcowana</h3>
+          <p class="font-body-md text-slate-600">
+            Każdy detal produkowany jest wyłącznie ze stali konstrukcyjnej posiadającej świadectwo 3.1 (EN 10204). Gwarantuje to stałą sprężystość i odporność na pękanie.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 p-8 rounded shadow-sm space-y-4">
+          <div class="w-12 h-12 bg-blue-50 text-blue-700 flex items-center justify-center rounded">
+            <i data-lucide="gauge" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold">Bezpośredni Nadzór Produkcji</h3>
+          <p class="font-body-md text-slate-600">
+            Jako zakład produkcyjny z własną narzędziownią eliminujemy pośredników handlowych, oferując elastyczność w dopasowaniu tolerancji wymiarowych i ekspresowe terminy.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Historical Timeline & Process -->
+      <div class="bg-white border border-slate-200 rounded p-8 md:p-12 mb-16 shadow-sm">
+        <div class="max-w-3xl mb-10">
+          <h2 class="font-headline-md text-headline-md text-slate-900 font-bold mb-3">
+            Ewolucja Zakładu Produkcyjnego w Polance
+          </h2>
+          <p class="font-body-md text-slate-600">
+            Historia stałego inwestowania w park maszynowy, automatyzację procesów tłoczenia i rygorystyczne normy jakościowe.
+          </p>
+        </div>
+
+        <div class="relative border-l-2 border-blue-600 ml-4 space-y-10 pl-6">
+          
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+            <span class="font-mono text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">2004</span>
+            <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold mt-1">Powstanie Zakładu Ślusarsko-Produkcyjnego</h3>
+            <p class="font-body-md text-slate-600 mt-1">
+              Władysław Marzec rejestruje działalność wytwórczą okuć meblowych w Polance. Uruchomienie pierwszych pras mimośrodowych i tłoczenia kątowników stalowych.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+            <span class="font-mono text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">2012</span>
+            <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold mt-1">Rozbudowa o Linię Złączy Mimośrodowych i Prowadnic</h3>
+            <p class="font-body-md text-slate-600 mt-1">
+              Wdrożenie seryjnej produkcji złączy minifix ø15mm oraz systemów prowadnic szufladowych kulkowych o nośności do 45 kg dla przemysłu meblarskiego.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+            <span class="font-mono text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">2019</span>
+            <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold mt-1">Wdrożenie Cichego Domyku Hydraulicznego Clip-On</h3>
+            <p class="font-body-md text-slate-600 mt-1">
+              Premiera serii zawiasów hydraulicznych z tłoczkami mosiężnymi. Uzyskanie certyfikacji wytrzymałościowej 80 000 cykli roboczych zgodnie z normą PN-EN 15570.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+            <span class="font-mono text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">2026</span>
+            <h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold mt-1">Integracja Cyfrowa &amp; Kooperacja OEM B2B</h3>
+            <p class="font-body-md text-slate-600 mt-1">
+              Uruchomienie cyfrowego systemu obsługi zapytań ofertowych B2B, udostępnienie modeli CAD 3D dla konstruktorów i rozwój usług tłoczenia kontraktowego.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Factory Specs & Registry Box -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <div class="bg-slate-900 text-white rounded p-8 space-y-4">
+          <h3 class="font-headline-md text-headline-md text-white font-bold flex items-center gap-2">
+            <i data-lucide="file-check-2" class="w-6 h-6 text-blue-400"></i>
+            <span>Dane Rejestrowe i Identyfikacja</span>
+          </h3>
+          <p class="font-body-sm text-slate-300">
+            Oficjalne dane podmiotu gospodarczego zarejestrowanego w CEIDG:
+          </p>
+          <div class="space-y-2 font-mono text-sm border-t border-slate-800 pt-4">
+            <div class="flex justify-between py-1 border-b border-slate-800/60">
+              <span class="text-slate-400">Nazwa prawna:</span>
+              <span class="text-white font-sans font-semibold">MARZEC WŁADYSŁAW (WAMET &amp; MAT-MAR)</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-slate-800/60">
+              <span class="text-slate-400">NIP:</span>
+              <span class="text-blue-400 font-bold">6811208594</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-slate-800/60">
+              <span class="text-slate-400">REGON:</span>
+              <span class="text-white font-semibold">356866962</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-slate-800/60">
+              <span class="text-slate-400">PKD:</span>
+              <span class="text-white font-semibold">25.99.Z (Wytwarzanie wyrobów metalowych)</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-slate-400">Lokalizacja:</span>
+              <span class="text-white font-semibold">Polanka 130 / 375, 32-400 Myślenice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded p-8 flex flex-col justify-between space-y-6">
+          <div>
+            <h3 class="font-headline-md text-headline-md text-slate-900 font-bold mb-2 flex items-center gap-2">
+              <i data-lucide="handshake" class="w-6 h-6 text-blue-600"></i>
+              <span>Rozpocznij Współpracę B2B</span>
+            </h3>
+            <p class="font-body-md text-slate-600">
+              Dostarczamy okucia do producentów mebli kuchennych, biurowych i pokojowych. Zapewniamy stałość dostaw paletowych, bezpośrednie doradztwo techniczne i korzystne warunki handlowe.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="kontakt.html" class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 font-label-md font-bold rounded transition-all shadow-sm">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>Skontaktuj się z Fabryką</span>
+            </a>
+            <a href="kategorie.html" class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 px-6 py-3 font-label-md font-bold rounded transition-all">
+              <i data-lucide="book-open" class="w-4 h-4"></i>
+              <span>Przejrzyj Katalog Okuć</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-slate-950 text-slate-200 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-gutter pt-space-xl pb-space-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl">
+        
+        <div class="lg:col-span-2 space-y-space-md">
+          <a class="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded" href="index.html" aria-label="MAT-MAR - Strona główna">
+            <img src="logo-white.webp" alt="MAT-MAR" class="h-11 sm:h-12 w-auto object-contain" />
+          </a>
+          <p class="font-body-sm text-body-sm text-slate-200 max-w-sm">
+            Wysokoprecyzyjna produkcja komponentów stalowych, okuć meblowych, zawiasów, łączników konstrukcyjnych i systemów montażowych dla przemysłu meblarskiego w Europie Środkowej. Rok założenia 2004.
+          </p>
+          <div class="space-y-1 font-body-sm text-body-sm text-slate-200 border-t border-slate-700 pt-space-sm">
+            <div class="flex justify-between">
+              <span class="text-slate-300 font-medium">NIP:</span>
+              <span class="text-white font-mono font-semibold">6811208594</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-300 font-medium">REGON:</span>
+              <span class="text-white font-mono font-semibold">356866962</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h4 class="font-label-md text-label-md text-white font-bold">Katalog Okuć</h4>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-slate-200">
+            <li><a class="hover:text-white transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="kategoria-zawiasy.html"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400" aria-hidden="true"></i><span>Zawiasy Clip-On Soft-Close</span></a></li>
+            <li><a class="hover:text-white transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="kategorie.html"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400" aria-hidden="true"></i><span>Prowadnice Kulkowe H-45</span></a></li>
+            <li><a class="hover:text-white transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="kategorie.html"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400" aria-hidden="true"></i><span>Złącza Mimośrodowe Minifix</span></a></li>
+            <li><a class="hover:text-white transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="kategorie.html"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400" aria-hidden="true"></i><span>Kątowniki i Płaskowniki</span></a></li>
+            <li><a class="hover:text-white transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="park-maszynowy.html"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400" aria-hidden="true"></i><span>Produkcja OEM &amp; Tłoczniki</span></a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h4 class="font-label-md text-label-md text-white font-bold">Fabryka &amp; Adres</h4>
+          <div class="space-y-space-xs font-body-sm text-body-sm text-slate-200">
+            <p class="text-white font-semibold">MAT-MAR Wamet Zakład Produkcyjny</p>
+            <p>Polanka 375 / 130</p>
+            <p>32-400 Myślenice, Polska</p>
+            <div class="pt-space-xs">
+              <p class="font-label-sm text-label-sm text-white font-semibold">Godziny Pracy Zakładu:</p>
+              <p class="text-body-sm text-slate-200">Pn – Czw: 07:00 – 16:00<br/>Pt: 07:00 – 14:00 (Sob – Nd: nieczynne)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h4 class="font-label-md text-label-md text-white font-bold">Kontrola &amp; Standardy</h4>
+          <div class="space-y-space-sm font-body-sm text-body-sm text-slate-200">
+            <div class="border-l-2 border-blue-500 pl-space-xs">
+              <span class="block text-white font-semibold">Polska Produkcja</span>
+              <span class="text-slate-300">Okucia ze stali zimnowalcowanej</span>
+            </div>
+            <div class="border-l-2 border-blue-500 pl-space-xs">
+              <span class="block text-white font-semibold">EN 10204 / 3.1</span>
+              <span class="text-slate-300">Atesty hutnicze na stale</span>
+            </div>
+            <div class="border-l-2 border-blue-500 pl-space-xs">
+              <span class="block text-white font-semibold">PN-EN 15570</span>
+              <span class="text-slate-300">80 000 cykli otwarć</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-space-lg border-t border-slate-700 flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-slate-300">
+        <p>© 2004–2026 MAT-MAR &amp; Wamet Myślenice. Wszelkie prawa zastrzeżone.</p>
+        <div class="flex items-center gap-space-lg">
+          <a class="hover:text-white transition-colors inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="kategorie.html"><i data-lucide="layers" class="w-3.5 h-3.5" aria-hidden="true"></i><span>Karty Techniczne &amp; CAD</span></a>
+          <a class="hover:text-white transition-colors inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="kontakt.html"><i data-lucide="shield" class="w-3.5 h-3.5" aria-hidden="true"></i><span>Polityka Prywatności</span></a>
+          <a class="hover:text-white transition-colors inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-400 rounded" href="koszyk.html"><i data-lucide="file-text" class="w-3.5 h-3.5" aria-hidden="true"></i><span>Regulamin B2B</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "/home/jankuchnia/Desktop/matmar/.claude/.headroom_wrap_marker.json": {
+    "mtime": 1790168048.1233084,
+    "ast_hash": "017575a898894087819dfae34a2567a1",
+    "semantic_hash": "017575a898894087819dfae34a2567a1"
+  },
+  "/home/jankuchnia/Desktop/matmar/.claude/settings.local.json": {
+    "mtime": 1790168048.1243455,
+    "ast_hash": "0fe1ac32cc60356ce6f095bb2a7dd9d9",
+    "semantic_hash": "0fe1ac32cc60356ce6f095bb2a7dd9d9"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/tailwind-config.js": {
+    "mtime": 1790170389.8369513,
+    "ast_hash": "3cb84f766b69b6d7b07d8a136ad26d1d",
+    "semantic_hash": "3cb84f766b69b6d7b07d8a136ad26d1d"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/main.js": {
+    "mtime": 1790170536.7954957,
+    "ast_hash": "9b1801f0dc721bb41fe2ae751b777a0b",
+    "semantic_hash": "9b1801f0dc721bb41fe2ae751b777a0b"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/page-index.js": {
+    "mtime": 1790170558.0314198,
+    "ast_hash": "2b2dead967153def1e5441ff1dce06e2",
+    "semantic_hash": "2b2dead967153def1e5441ff1dce06e2"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/page-kategorie.js": {
+    "mtime": 1790170574.3113616,
+    "ast_hash": "bcf3f7d97edbe926fd21a7910fd156e4",
+    "semantic_hash": "bcf3f7d97edbe926fd21a7910fd156e4"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/page-kategoria-zawiasy.js": {
+    "mtime": 1790170581.701335,
+    "ast_hash": "2113f8f171b58d67332635fec1d1dc42",
+    "semantic_hash": "2113f8f171b58d67332635fec1d1dc42"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/page-kontakt.js": {
+    "mtime": 1790170589.0983086,
+    "ast_hash": "2f2ccc056db1f78b688eb56b09e79d8b",
+    "semantic_hash": "2f2ccc056db1f78b688eb56b09e79d8b"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/page-produkt-zawias-clip-on.js": {
+    "mtime": 1790170637.8591342,
+    "ast_hash": "8452b70ac756cf701016937463dfe86f",
+    "semantic_hash": "8452b70ac756cf701016937463dfe86f"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/page-koszyk.js": {
+    "mtime": 1790171044.029654,
+    "ast_hash": "6b80cf439e694fa9a9146262fd6f94c4",
+    "semantic_hash": "6b80cf439e694fa9a9146262fd6f94c4"
+  },
+  "/home/jankuchnia/Desktop/matmar/js/cart.js": {
+    "mtime": 1790171055.7326064,
+    "ast_hash": "11c036e88e30c45739eeb4329cec7920",
+    "semantic_hash": "11c036e88e30c45739eeb4329cec7920"
+  },
+  "/home/jankuchnia/Desktop/matmar/index.html": {
+    "mtime": 1790170846.383375,
+    "ast_hash": "9ae6d17e9f2a07f1cd34e6a897aec9c3",
+    "semantic_hash": "9ae6d17e9f2a07f1cd34e6a897aec9c3"
+  },
+  "/home/jankuchnia/Desktop/matmar/kategoria-zawiasy.html": {
+    "mtime": 1790170846.3844461,
+    "ast_hash": "727512289d74dc5077e8ebe31d78deb3",
+    "semantic_hash": "727512289d74dc5077e8ebe31d78deb3"
+  },
+  "/home/jankuchnia/Desktop/matmar/kontakt.html": {
+    "mtime": 1790170846.3851519,
+    "ast_hash": "6003bd30dd0d191b43beb40f3b153612",
+    "semantic_hash": "6003bd30dd0d191b43beb40f3b153612"
+  },
+  "/home/jankuchnia/Desktop/matmar/o-nas.html": {
+    "mtime": 1790170846.3857746,
+    "ast_hash": "b16c59b41f6b0005eb231ba2ae29eb44",
+    "semantic_hash": "b16c59b41f6b0005eb231ba2ae29eb44"
+  },
+  "/home/jankuchnia/Desktop/matmar/park-maszynowy.html": {
+    "mtime": 1790170846.3864913,
+    "ast_hash": "fe94ba1daac5bce15ef1ce612cd29999",
+    "semantic_hash": "fe94ba1daac5bce15ef1ce612cd29999"
+  },
+  "/home/jankuchnia/Desktop/matmar/kategorie.html": {
+    "mtime": 1790170846.3898401,
+    "ast_hash": "6134f79d1d45d95f223b3d4cab4f5ce6",
+    "semantic_hash": "6134f79d1d45d95f223b3d4cab4f5ce6"
+  },
+  "/home/jankuchnia/Desktop/matmar/koszyk.html": {
+    "mtime": 1790170846.3906593,
+    "ast_hash": "cb44d22c54478b0a7464344321fcf6a6",
+    "semantic_hash": "cb44d22c54478b0a7464344321fcf6a6"
+  },
+  "/home/jankuchnia/Desktop/matmar/produkt-zawias-clip-on.html": {
+    "mtime": 1790170846.3913176,
+    "ast_hash": "00b1f6269acc24176e753fa9d1ebcd88",
+    "semantic_hash": "00b1f6269acc24176e753fa9d1ebcd88"
+  },
+  "/home/jankuchnia/Desktop/matmar/DOCS/brief.md": {
+    "mtime": 1790153528.6850367,
+    "ast_hash": "6af4345a95bd9a622eacdac549d4aa5d",
+    "semantic_hash": "6af4345a95bd9a622eacdac549d4aa5d"
+  },
+  "/home/jankuchnia/Desktop/matmar/DOCS/research.md": {
+    "mtime": 1790153541.001057,
+    "ast_hash": "97ff837cc58a48d9d5bda9f2709b958b",
+    "semantic_hash": "97ff837cc58a48d9d5bda9f2709b958b"
+  },
+  "/home/jankuchnia/Desktop/matmar/DOCS/TECH-STACK.md": {
+    "mtime": 1790154431.0590963,
+    "ast_hash": "3ed0bee21e2157e42a95706a091b3dfa",
+    "semantic_hash": "3ed0bee21e2157e42a95706a091b3dfa"
+  },
+  "/home/jankuchnia/Desktop/matmar/DOCS/SITE-STRUCTURE.md": {
+    "mtime": 1790154459.5391684,
+    "ast_hash": "9b8120d839095f93c2c18bc710e6999b",
+    "semantic_hash": "9b8120d839095f93c2c18bc710e6999b"
+  },
+  "/home/jankuchnia/Desktop/matmar/471655110_557727693751435_5313391410913678496_n.jpg": {
+    "mtime": 1790171214.8995752,
+    "ast_hash": "ba74b59e0b735cc2d389be6a24c37561",
+    "semantic_hash": "ba74b59e0b735cc2d389be6a24c37561"
+  },
+  "/home/jankuchnia/Desktop/matmar/stitch-screens/screen-electric-cobalt.png": {
+    "mtime": 1790163237.275769,
+    "ast_hash": "647b06aa0caaf8aea9dd42ef30be1481",
+    "semantic_hash": "647b06aa0caaf8aea9dd42ef30be1481"
+  }
+}

@@ -1,0 +1,6 @@
+.agents/
+.serena/
+.git/
+node_modules/
+dist/
+build/
