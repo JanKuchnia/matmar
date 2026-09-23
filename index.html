@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>MAT-MAR &amp; Wamet | Fabryka Okuć Meblowych i Podzespołów Stalowych</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600;700;800&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    .font-display-lg, .text-display-lg { font-family: 'Chivo', sans-serif; font-size: 52px; line-height: 60px; font-weight: 800; letter-spacing: -0.03em; }
+    .font-headline-lg, .text-headline-lg { font-family: 'Chivo', sans-serif; font-size: 38px; line-height: 46px; font-weight: 700; letter-spacing: -0.02em; }
+    .font-headline-md, .text-headline-md { font-family: 'Chivo', sans-serif; font-size: 26px; line-height: 34px; font-weight: 600; letter-spacing: -0.01em; }
+    .font-headline-sm, .text-headline-sm { font-family: 'Chivo', sans-serif; font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; }
+    .font-body-lg, .text-body-lg { font-family: 'IBM Plex Sans', sans-serif; font-size: 17px; line-height: 26px; font-weight: 400; }
+    .font-body-md, .text-body-md { font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; line-height: 24px; font-weight: 400; }
+    .font-body-sm, .text-body-sm { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; line-height: 20px; font-weight: 400; }
+    .font-label-lg, .text-label-lg { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; line-height: 20px; font-weight: 600; }
+    .font-label-md, .text-label-md { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; line-height: 18px; font-weight: 600; }
+    .font-label-sm, .text-label-sm { font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; line-height: 16px; font-weight: 600; }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2563eb",
+            "primary-container": "#1d4ed8",
+            "surface": "#f8fafc",
+            "surface-dim": "#cbd5e1",
+            "surface-variant": "#e2e8f0",
+            "outline": "#64748b",
+            "on-surface": "#0f172a"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "display-lg": ["Chivo", "sans-serif"],
+            "headline-lg": ["Chivo", "sans-serif"],
+            "headline-md": ["Chivo", "sans-serif"],
+            "headline-sm": ["Chivo", "sans-serif"],
+            "body-lg": ["IBM Plex Sans", "sans-serif"],
+            "body-md": ["IBM Plex Sans", "sans-serif"],
+            "body-sm": ["IBM Plex Sans", "sans-serif"],
+            "label-lg": ["IBM Plex Sans", "sans-serif"],
+            "label-md": ["IBM Plex Sans", "sans-serif"],
+            "label-sm": ["IBM Plex Sans", "sans-serif"]
+          },
+          fontSize: {
+            "display-lg": ["52px", { lineHeight: "60px", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "headline-lg": ["38px", { lineHeight: "46px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-md": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-lg": ["17px", { lineHeight: "26px", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+            "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }],
+            "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }],
+            "label-sm": ["11px", { lineHeight: "16px", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm" data-path="katalog-okuc" href="#">
+          <div class="h-11 w-11 bg-slate-100 border border-slate-200 flex items-center justify-center p-1 shrink-0 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4lLTZVjrZi04znvS7kkLrDejqOruPmMF4hR1dMi_mOdG2WlCnqSFinPM_-3r3HdNMewxaM0mF3gzGbXkN10gnWhZ22uwMkFzxUR2KtwlV1eZCcNPw33LFNYbN1izsrza8sB9UT7JLCOINxeyhUS-69HDVVNSAFY3LrX_6ukb8wGMwx1I8APVb8TLvRgzNqXVopGd_uZRU-rMxoM35IxVJ5J7jIe85MSiihvV-qjdtMKonAMpZBh7hEhPKR_7bcS-HVw" alt="MAT-MAR &amp; Wamet Logo" class="h-full w-full object-contain"/>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm uppercase tracking-tight text-slate-900 leading-none">MAT-MAR</span>
+            <span class="font-label-sm text-label-sm text-blue-700 font-semibold tracking-normal">&amp; WAMET POLSKA</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-space-lg">
+        <a aria-current="page" class="py-space-sm text-blue-700 font-label-lg font-bold border-b-2 border-blue-600 transition-colors" data-path="katalog-okuc" href="#">Katalog Okuć</a>
+        <a class="font-label-md text-label-md text-slate-700 hover:text-blue-700 transition-colors py-space-sm" data-path="park-maszynowy-produkcja" href="#">Park Maszynowy</a>
+        <a class="font-label-md text-label-md text-slate-700 hover:text-blue-700 transition-colors py-space-sm" data-path="standardy-jakosci" href="#">Standardy Jakości</a>
+        <a class="font-label-md text-label-md text-slate-700 hover:text-blue-700 transition-colors py-space-sm" data-path="dla-stolarzy-fabryk" href="#">Dla Stolarzy i Fabryk</a>
+        <a class="font-label-md text-label-md text-slate-700 hover:text-blue-700 transition-colors py-space-sm" data-path="kontakt" href="#">Kontakt</a>
+      </nav>
+
+      <div class="flex items-center gap-space-md">
+        <a class="hidden sm:flex flex-col items-end text-right" href="tel:+48539179580">
+          <span class="font-label-sm text-label-sm text-slate-600">Zadzwoń do fabryki</span>
+          <span class="font-label-md text-label-md text-blue-700 font-bold">+48 539 179 580</span>
+        </a>
+        <a class="inline-flex items-center justify-center bg-blue-600 text-white px-space-lg py-space-sm font-label-md text-label-md hover:bg-blue-700 transition-colors shadow-sm" data-path="kontakt" href="#kalkulator-b2b">
+          Wycena B2B
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full">
+
+      <!-- Hero Section -->
+      <section class="relative w-full bg-slate-950 overflow-hidden text-white">
+        <!-- Background Image with Industrial Gradients for Maximum Readability -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <img alt="Zakład produkcyjny MAT-MAR Wamet w Polance - precyzyjne okucia meblowe na stole warsztatowym" class="w-full h-full object-cover object-center contrast-105" src="https://lh3.googleusercontent.com/aida/AEtjO1We8TvzBhdL134KvA3UDA3HCfdostlgHmxTjFQWCWHZz3MPFUUPPtEg1ysBvmc1g6mfPcYpG6DKAdz-E9EYwYSkNOeHFbW1to0OVLMwb7ZOll4wsRqIfIWJzp2PB3pjHelIFyggevGQC9tPFwmjrJWkrAX7BizyjCj3u4pXgoQyMJrZ93M8eirtuRwNn27ukxBVq1SfexJZ3c10IKTsHSII6SCEIXve7EBqRw2zbTEA2LJWdLYLhct13_o"/>
+          <!-- Layered dark overlay: heavy dark gradient on left/center for crystal clear text, subtle dark vignette -->
+          <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/60"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-gutter py-space-xl lg:py-24">
+          <div class="max-w-3xl flex flex-col space-y-space-md">
+            
+            <div class="inline-flex items-center self-start gap-space-xs px-space-sm py-1 bg-slate-900/80 border border-slate-700 backdrop-blur-sm font-label-sm text-label-sm text-slate-200">
+              <span class="w-2 h-2 bg-blue-500 inline-block"></span>
+              <span>Zakład Produkcyjny Polanka • Dystrybucja od 2004</span>
+            </div>
+
+            <div class="space-y-space-xs">
+              <h1 class="font-display-lg text-display-lg text-white tracking-tight leading-none uppercase">
+                Precyzja w każdym <span class="text-blue-500">detalu.</span>
+              </h1>
+              <p class="font-headline-md text-headline-md text-slate-200">
+                Okucia meblowe dla wymagających producentów
+              </p>
+            </div>
+
+            <p class="font-body-lg text-body-lg text-slate-300 max-w-2xl leading-relaxed">
+              Projektujemy i dostarczamy mechanizmy zawiasowe o podwyższonej żywotności, prowadnice kulkowe H-45 oraz precyzyjne złącza korpusowe minifix dla manufaktur mebli na wymiar i przemysłowych linii produkcyjnych.
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+              <a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-sm bg-blue-600 text-white font-label-md text-label-md transition-colors hover:bg-blue-500 shadow-md shadow-blue-900/30" href="#kalkulator-b2b">
+                <span>Formularz Wyceny B2B</span>
+                <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </a>
+              <a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-sm bg-slate-900/80 text-white border border-slate-700 font-label-md text-label-md transition-colors hover:bg-slate-800 backdrop-blur-sm" href="#katalog-produktow">
+                <span class="material-symbols-outlined text-base text-blue-400">description</span>
+                <span>Pobierz Katalog CAD / PDF</span>
+              </a>
+            </div>
+
+            <!-- 4 Fast Metrics Horizontal Spec Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-md border-t border-slate-800 mt-space-sm">
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-blue-400 font-bold">80 000+</span>
+                <span class="font-body-sm text-body-sm text-slate-400">Cykli testowych</span>
+              </div>
+              <div class="flex flex-col border-l border-slate-800 pl-space-sm sm:pl-space-md">
+                <span class="font-headline-sm text-headline-sm text-white font-bold">±0.02 mm</span>
+                <span class="font-body-sm text-body-sm text-slate-400">Tolerancja CNC</span>
+              </div>
+              <div class="flex flex-col border-l-0 sm:border-l border-slate-800 sm:pl-space-md">
+                <span class="font-headline-sm text-headline-sm text-blue-400 font-bold">24h</span>
+                <span class="font-body-sm text-body-sm text-slate-400">Magazyn bufor</span>
+              </div>
+              <div class="flex flex-col border-l border-slate-800 pl-space-sm sm:pl-space-md">
+                <span class="font-headline-sm text-headline-sm text-white font-bold">Od 2004</span>
+                <span class="font-body-sm text-body-sm text-slate-400">Rok założenia</span>
+              </div>
+            </div>
+
+            <!-- Industrial Subtext / Manufacturing Metadata -->
+            <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-sm text-slate-400 font-body-sm text-body-sm border-t border-slate-800/60">
+              <div class="flex items-center gap-space-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                <span>Stanowisko Kontroli Jakości • Polanka 375 (Seria H-45 / Clip-On)</span>
+              </div>
+              <div class="flex items-center gap-space-md">
+                <span>PKD: 25.99.Z</span>
+                <span class="text-slate-300 font-semibold">NIP 6811208594</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Ticker / Monochromatic Marquee -->
+      <div class="w-full bg-slate-900 text-slate-200 py-space-sm overflow-hidden select-none border-y border-slate-800">
+        <div class="flex whitespace-nowrap animate-none text-xs font-label-md">
+          <div class="flex items-center gap-space-lg shrink-0 px-space-md">
+            <span>Zawiasy hydrauliczne Clip-On</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Prowadnice kulkowe H-45 Soft-Close</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Złącza mimośrodowe Minifix fi 15</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Podnośniki gazowe i ramowe</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Frezowanie &amp; tłoczenie precyzyjne CNC</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Stal węglowa i odlewy ZnAl</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+          </div>
+          <div class="flex items-center gap-space-lg shrink-0 px-space-md">
+            <span>Zawiasy hydrauliczne Clip-On</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Prowadnice kulkowe H-45 Soft-Close</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Złącza mimośrodowe Minifix fi 15</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Podnośniki gazowe i ramowe</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Frezowanie &amp; tłoczenie precyzyjne CNC</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+            <span>Stal węglowa i odlewy ZnAl</span>
+            <span class="text-blue-400 font-bold select-none">/</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Catalog Section -->
+      <section class="w-full bg-surface py-space-xl" id="katalog-produktow">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+            <div class="space-y-space-xs max-w-2xl">
+              <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-blue-700 font-semibold">
+                <span class="w-3 h-0.5 bg-blue-600"></span>
+                <span>Program Asortymentowy Fabryki</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-slate-900 tracking-tight">
+                Standaryzowane Podzespoły i Okucia Meblowe
+              </h2>
+              <p class="font-body-md text-body-md text-slate-600 max-w-prose">
+                Parametryzowane elementy ze stali walcowanej, niklowanej oraz odlewów stopu cynku. Bezpośrednia wysyłka z magazynu centralnego w Polance k. Myślenic.
+              </p>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="font-label-sm text-label-sm text-slate-600">Filtruj:</span>
+              <span class="px-space-sm py-1 bg-blue-600 text-white font-label-sm text-label-sm shadow-sm">Wszystkie</span>
+              <span class="px-space-sm py-1 bg-white border border-slate-300 text-slate-700 hover:border-blue-500 font-label-sm text-label-sm transition-colors cursor-pointer">Zawiasy</span>
+              <span class="px-space-sm py-1 bg-white border border-slate-300 text-slate-700 hover:border-blue-500 font-label-sm text-label-sm transition-colors cursor-pointer">Prowadnice H-45</span>
+            </div>
+          </div>
+
+          <!-- Product Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+            
+            <!-- Card 1 -->
+            <div class="bg-white border border-slate-200 hover:border-blue-500 flex flex-col p-space-md shadow-sm transition-colors">
+              <div class="flex items-center justify-between pb-space-sm font-body-sm text-body-sm">
+                <span class="font-semibold text-blue-700">SKU: MM-ZAW-110-HYD</span>
+                <span class="bg-slate-100 text-slate-800 border border-slate-200 px-space-xs py-0.5 font-label-sm text-label-sm font-semibold">Test 80k cykli</span>
+              </div>
+              <div class="relative aspect-video bg-slate-100 overflow-hidden mb-space-sm">
+                <img alt="Zawias puszkowy Clip-On 110 ze spowalniaczem hydraulicznym MAT-MAR Wamet zamontowany w ciemnym dębie" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UQb5qzZ7oR0o-N7f570u17rQZvaKb85bpBAEM9J_vq0K9Hjadb5HfCw6Y5J73OVGdhGxwnOzfEZL3L-stfZhecUkVqx_Y9FvcMVwUOmI3YGQYo491MkhMpzyf7Oon6Fgbok8R1hdH90cA2A69Jzsrs4qXpEmTLFwq9vv2DnhKqCJ-g3UYBbdjpXjR5nsExQh6P2rYPPlcY51ZmnJANZLCRbS6aORNg8Wr_XGi5D08hIjYW0vp4SiaNrw"/>
+                <div class="absolute bottom-2 left-2 bg-slate-900/90 text-white px-space-xs py-0.5 font-label-sm text-label-sm">
+                  System Soft-Close
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                Zawias Clip-On 110° Hydrauliczny
+              </h3>
+              <p class="font-body-sm text-body-sm text-slate-600 pt-space-xs pb-space-sm">
+                Zawias z wbudowanym tłumikiem hydraulicznym gwarantującym cichy domyk. Płynna regulacja mimośrodowa 3D w trzech płaszczyznach bezpośrednio na ramieniu.
+              </p>
+              <div class="mt-auto border-t border-slate-100 pt-space-xs space-y-1.5 mb-space-sm font-body-sm text-body-sm">
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Średnica puszki:</span>
+                  <span class="text-slate-900 font-medium">Ø 35 mm (rozstaw 45 / 48 mm)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Materiał / Powłoka:</span>
+                  <span class="text-slate-900 font-medium">Stal walcowana, powłoka nikiel</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Pakowanie zbiorcze:</span>
+                  <span class="text-slate-900 font-medium">Karton 100 szt. / Paleta 4000 szt.</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs pt-space-xs">
+                <a class="flex-1 py-space-xs bg-blue-600 text-white text-center font-label-sm text-label-sm hover:bg-blue-700 transition-colors shadow-sm" href="#kalkulator-b2b">
+                  Zapytaj o Cennik Hurtowy
+                </a>
+                <button class="p-space-xs bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 transition-colors" title="Karta PDF">
+                  <span class="material-symbols-outlined text-base">download</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-slate-200 hover:border-blue-500 flex flex-col p-space-md shadow-sm transition-colors">
+              <div class="flex items-center justify-between pb-space-sm font-body-sm text-body-sm">
+                <span class="font-semibold text-blue-700">SKU: MM-PRW-H45-SC</span>
+                <span class="bg-slate-100 text-slate-800 border border-slate-200 px-space-xs py-0.5 font-label-sm text-label-sm font-semibold">Udźwig do 45 kg</span>
+              </div>
+              <div class="relative aspect-video bg-slate-100 overflow-hidden mb-space-sm">
+                <img alt="Prowadnica kulkowa H-45 z pełnym wysuwem stal ocynkowana MAT-MAR Wamet" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UMGreXTOpM5JjugzodVm4svEJeKJyTep1wEOCC43u7Yc6gCbdvqkz33YkPmYOlWjpaYXKbqDGJ4OEP4kGLqVnZ-gLn8RS1Ku7jO698uUeB0v2y71eEH6ob_0X3Av0_y5Ox6AcR_PTj1SgSAwZzIqJkni5Sa6K7qgLTUdhIgqOuk1PHLdf5Y9iNLxXmxmUV-KlguUgSACcC2nPkENLvU1wh2d5Ckc2JGg_VcMTr7gwWthoSsKfMzf-UbQ"/>
+                <div class="absolute bottom-2 left-2 bg-slate-900/90 text-white px-space-xs py-0.5 font-label-sm text-label-sm">
+                  Pełny wysuw 3-sekcyjny
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                Prowadnica Kulkowa H-45 Teleskopowa
+              </h3>
+              <p class="font-body-sm text-body-sm text-slate-600 pt-space-xs pb-space-sm">
+                Teleskopowy mechanizm prowadzący o podwyższonej sztywności. Grubość ścianek 1.2 / 1.2 / 1.5 mm. Podwójny rząd stalowych łożysk tocznych zapewniający bezszelestny przesuw.
+              </p>
+              <div class="mt-auto border-t border-slate-100 pt-space-xs space-y-1.5 mb-space-sm font-body-sm text-body-sm">
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Długości standard:</span>
+                  <span class="text-slate-900 font-medium">250 mm do 700 mm (skok co 50 mm)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Dopuszczalne obciążenie:</span>
+                  <span class="text-slate-900 font-medium">45 kg przy pełnym rozstawie</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Mechanizm rozpinania:</span>
+                  <span class="text-slate-900 font-medium">Dźwignia szybkiego montażu</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs pt-space-xs">
+                <a class="flex-1 py-space-xs bg-blue-600 text-white text-center font-label-sm text-label-sm hover:bg-blue-700 transition-colors shadow-sm" href="#kalkulator-b2b">
+                  Zapytaj o Cennik Hurtowy
+                </a>
+                <button class="p-space-xs bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 transition-colors" title="Karta PDF">
+                  <span class="material-symbols-outlined text-base">download</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white border border-slate-200 hover:border-blue-500 flex flex-col p-space-md shadow-sm transition-colors">
+              <div class="flex items-center justify-between pb-space-sm font-body-sm text-body-sm">
+                <span class="font-semibold text-blue-700">SKU: MM-ZLC-MINIFIX-15</span>
+                <span class="bg-slate-100 text-slate-800 border border-slate-200 px-space-xs py-0.5 font-label-sm text-label-sm font-semibold">Odlew ciśnieniowy ZnAl</span>
+              </div>
+              <div class="relative aspect-video bg-slate-100 overflow-hidden mb-space-sm">
+                <img alt="Złącza meblowe mimośrodowe Minifix 15 mufy wkręcane i trzpienie stalowe ocynkowane MAT-MAR" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XpKGGyWE2h57cZ3UJHUZOS2R8iyGrgxp679Vfl0ikf1pa3O9xHHYicefaxwMT1n6P39jyCogkvYmzR4ALDjMNzzzSZuEuistM7Em6N-oaI8MV4APKe0JjFWcZLqv2587neUJI8BZNjYQ9M6gz8HusxG2nXmdET4rcPzGn7tXMMCJnjOJZ7tKwAjI1ldyxeEvELtW9pbUZUol1C5Lb56IOJuO9bADv6SXbTy4FgfdXAZx5s3MSL-54tzg"/>
+                <div class="absolute bottom-2 left-2 bg-slate-900/90 text-white px-space-xs py-0.5 font-label-sm text-label-sm">
+                  Sztywne połączenie 90°
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                Złącza Mimośrodowe fi 15 + Trzpienie
+              </h3>
+              <p class="font-body-sm text-body-sm text-slate-600 pt-space-xs pb-space-sm">
+                Wysoce wytrzymałe gniazda mimośrodowe do szybkiego montażu korpusów mebli płytowych (16 mm, 18 mm). Odlew ciśnieniowy o zerowej kruchości montażowej.
+              </p>
+              <div class="mt-auto border-t border-slate-100 pt-space-xs space-y-1.5 mb-space-sm font-body-sm text-body-sm">
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Wymiary mimośrodu:</span>
+                  <span class="text-slate-900 font-medium">Ø 15 mm x wys. 12 mm / 13.5 mm</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Trzpień stalowy:</span>
+                  <span class="text-slate-900 font-medium">Długość L=34 mm gwint Euro / M6</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Pakiety OEM:</span>
+                  <span class="text-slate-900 font-medium">Worki 500 szt. / Kartony 2500 szt.</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs pt-space-xs">
+                <a class="flex-1 py-space-xs bg-blue-600 text-white text-center font-label-sm text-label-sm hover:bg-blue-700 transition-colors shadow-sm" href="#kalkulator-b2b">
+                  Zapytaj o Cennik Hurtowy
+                </a>
+                <button class="p-space-xs bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 transition-colors" title="Karta PDF">
+                  <span class="material-symbols-outlined text-base">download</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- OEM Bespoke Engineering Banner -->
+          <div class="mt-space-lg bg-slate-900 border border-slate-800 p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+            <div class="space-y-space-xs max-w-prose">
+              <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-blue-400">
+                <span class="material-symbols-outlined text-base">precision_manufacturing</span>
+                <span>Kooperacja przemysłowa &amp; obróbka stali wg rysunku technicznego</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-white">
+                Potrzebujesz okucia nietypowego lub własnej geometrii montażowej?
+              </h3>
+              <p class="font-body-md text-body-md text-slate-300">
+                W naszym zakładzie w Polance wykonujemy oprzyrządowanie wykrojnikowe, tłoczniki oraz krótkie serie złączy stalowych na życzenie klientów fabrycznych. Dostarcz plik DXF, DWG lub wzór fizyczny.
+              </p>
+            </div>
+            <div class="shrink-0">
+              <a class="inline-flex items-center gap-space-sm px-space-lg py-space-sm bg-blue-600 text-white font-label-md text-label-md hover:bg-blue-700 transition-colors shadow-sm" href="#kalkulator-b2b">
+                <span>Dział Konstrukcyjny CAD</span>
+                <span class="material-symbols-outlined text-base">build</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="border-slate-200 border-t m-0"/>
+
+      <!-- Architecture of Precision (4 Pillars) -->
+      <section class="w-full bg-slate-100 py-space-xl">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="space-y-space-xs max-w-prose pb-space-lg">
+            <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-blue-700 font-semibold">
+              <span class="w-3 h-0.5 bg-blue-600"></span>
+              <span>Standardy Produkcyjne &amp; Kontrola Jakości</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-slate-900 tracking-tight">
+              Architektura Precyzji w Standardzie MAT-MAR
+            </h2>
+            <p class="font-body-md text-body-md text-slate-600">
+              Każda partia produkcyjna podlega szczegółowej kontroli jakości. Dbamy o powtarzalność wymiarową, trwałość mechaniczną oraz bezawaryjny montaż u producentów mebli.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            
+            <div class="bg-white border border-slate-200 hover:border-blue-400 p-space-md flex flex-col justify-between shadow-sm transition-colors">
+              <div class="space-y-space-sm">
+                <div class="flex items-center justify-between pb-space-xs border-b border-slate-100">
+                  <span class="font-label-sm text-label-sm text-blue-700 font-semibold">EN 10204 / 3.1</span>
+                  <span class="material-symbols-outlined text-blue-600 text-xl">verified</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                  Stopy Zgodne z PN-EN
+                </h3>
+                <p class="font-body-sm text-body-sm text-slate-600">
+                  Atestowane stale konstrukcyjne oraz stopy cynku ZnAl odporne na naprężenia zrywające i cykliczne mikrougięcia szaf i korpusów mebli.
+                </p>
+              </div>
+              <div class="pt-space-md font-body-sm text-body-sm text-slate-500 flex items-center gap-space-xs">
+                <span class="w-1.5 h-1.5 bg-blue-600 inline-block"></span>
+                <span>Atesty hutnicze i surowcowe</span>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 hover:border-blue-400 p-space-md flex flex-col justify-between shadow-sm transition-colors">
+              <div class="space-y-space-sm">
+                <div class="flex items-center justify-between pb-space-xs border-b border-slate-100">
+                  <span class="font-label-sm text-label-sm text-blue-700 font-semibold">Tolerancja ±0.02 mm</span>
+                  <span class="material-symbols-outlined text-blue-600 text-xl">straighten</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                  Geometria Bez Luzów
+                </h3>
+                <p class="font-body-sm text-body-sm text-slate-600">
+                  Tolerancja przetłoczeń w granicach ±0.02 mm eliminuje zjawisko opadania frontów i konieczność ciągłego poziomowania u odbiorcy docelowego.
+                </p>
+              </div>
+              <div class="pt-space-md font-body-sm text-body-sm text-slate-500 flex items-center gap-space-xs">
+                <span class="w-1.5 h-1.5 bg-blue-600 inline-block"></span>
+                <span>Zerowy luz konstrukcyjny ramion</span>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 hover:border-blue-400 p-space-md flex flex-col justify-between shadow-sm transition-colors">
+              <div class="space-y-space-sm">
+                <div class="flex items-center justify-between pb-space-xs border-b border-slate-100">
+                  <span class="font-label-sm text-label-sm text-blue-700 font-semibold">Wsparcie Techniczne</span>
+                  <span class="material-symbols-outlined text-blue-600 text-xl">support_agent</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                  Doradztwo Fabryczne
+                </h3>
+                <p class="font-body-sm text-body-sm text-slate-600">
+                  Bezpośredni kontakt z producentem (Władysław Marzec). Pomoc w doborze okuć, rozstawów, nośności oraz rozwiązań do niestandardowych frontów i płyt meblowych.
+                </p>
+              </div>
+              <div class="pt-space-md font-body-sm text-body-sm text-slate-500 flex items-center gap-space-xs">
+                <span class="w-1.5 h-1.5 bg-blue-600 inline-block"></span>
+                <span>Pomoc bezpośrednia B2B</span>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 hover:border-blue-400 p-space-md flex flex-col justify-between shadow-sm transition-colors">
+              <div class="space-y-space-sm">
+                <div class="flex items-center justify-between pb-space-xs border-b border-slate-100">
+                  <span class="font-label-sm text-label-sm text-blue-700 font-semibold">Magazyn Buforowy</span>
+                  <span class="material-symbols-outlined text-blue-600 text-xl">local_shipping</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-slate-900">
+                  Ciągłość Dostaw Hurtowych
+                </h3>
+                <p class="font-body-sm text-body-sm text-slate-600">
+                  Płynne dostawy drobnicowe i paletowe. Magazyn buforowy w centrum Małopolski bezpośrednio przy trasie S7 / Zakopiance gwarantuje brak przestojów montażowych.
+                </p>
+              </div>
+              <div class="pt-space-md font-body-sm text-body-sm text-slate-500 flex items-center gap-space-xs">
+                <span class="w-1.5 h-1.5 bg-blue-600 inline-block"></span>
+                <span>Wysyłka kurierska i spedycyjna</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 border-t m-0"/>
+
+      <!-- Interactive B2B Quote Calculator -->
+      <section class="w-full bg-white py-space-xl" id="kalkulator-b2b">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+            
+            <div class="lg:col-span-5 space-y-space-md">
+              <div class="space-y-space-xs">
+                <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-blue-700 font-semibold">
+                  <span class="w-3 h-0.5 bg-blue-600"></span>
+                  <span>Zapytanie i Wycena</span>
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-slate-900 tracking-tight">
+                  Formularz Wyceny Hurtowej B2B
+                </h2>
+                <p class="font-body-md text-body-md text-slate-600 max-w-prose">
+                  Obsługujemy fabryki mebli, producentów zabudów kuchennych, hurtownie akcesoriów oraz zakłady stolarskie w całej Polsce.
+                </p>
+              </div>
+
+              <!-- Contact Panel -->
+              <div class="border border-slate-200 p-space-md space-y-space-md">
+                <div class="flex items-center justify-between pb-space-xs border-b border-slate-200">
+                  <span class="font-label-md text-label-md text-slate-900 font-bold">Kontakt z Zakładem Produkcyjnym</span>
+                  <span class="w-2 h-2 bg-blue-600 inline-block"></span>
+                </div>
+                <div class="space-y-1 font-body-sm text-body-sm text-slate-700">
+                  <p class="font-semibold text-slate-900">MAT-MAR &amp; WAMET POLSKA</p>
+                  <p class="text-slate-600">Polanka 375, 32-400 Myślenice</p>
+                  <p class="text-slate-600">NIP: 6811208594 | REGON: 356866962</p>
+                </div>
+                <div class="space-y-space-xs border-t border-slate-200 pt-space-sm font-body-sm text-body-sm">
+                  <div class="flex items-center justify-between py-1">
+                    <span class="text-slate-600">Telefon Główny:</span>
+                    <a class="text-blue-700 font-bold hover:underline" href="tel:+48539179580">+48 539 179 580</a>
+                  </div>
+                  <div class="flex items-center justify-between py-1 border-t border-slate-100">
+                    <span class="text-slate-600">Doradztwo Techniczne:</span>
+                    <a class="text-blue-700 font-bold hover:underline" href="tel:+48696085379">+48 696 085 379</a>
+                  </div>
+                  <div class="flex items-center justify-between py-1 border-t border-slate-100">
+                    <span class="text-slate-600">E-mail Fabryczny:</span>
+                    <a class="text-blue-700 font-bold hover:underline" href="mailto:wamet@op.pl">wamet@op.pl</a>
+                  </div>
+                </div>
+                <p class="font-body-sm text-body-sm text-slate-700 pt-space-xs border-t border-slate-200 max-w-prose">
+                  Godziny pracy: Pn – Czw 07:00–16:00, Pt 07:00–14:00 (szybka odpowiedź telefoniczna i e-mailowa).
+                </p>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="lg:col-span-7 bg-white border border-slate-200 p-space-lg shadow-sm">
+              <form class="space-y-space-md" id="inquiryForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.reset();">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div class="space-y-space-xs">
+                    <label class="font-label-sm text-label-sm text-slate-800 font-semibold" for="companyName">Firma / NIP Kontrahenta *</label>
+                    <input class="w-full bg-slate-50 border border-slate-300 px-space-sm py-space-sm font-body-sm text-body-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:bg-white" id="companyName" placeholder="np. Meblex Sp. z o.o. / 681..." required="" type="text"/>
+                  </div>
+                  <div class="space-y-space-xs">
+                    <label class="font-label-sm text-label-sm text-slate-800 font-semibold" for="contactEmail">Adres E-mail do Oferty *</label>
+                    <input class="w-full bg-slate-50 border border-slate-300 px-space-sm py-space-sm font-body-sm text-body-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:bg-white" id="contactEmail" placeholder="zaopatrzenie@twojafirma.pl" required="" type="email"/>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div class="space-y-space-xs">
+                    <label class="font-label-sm text-label-sm text-slate-800 font-semibold" for="contactPhone">Telefon Bezpośredni *</label>
+                    <input class="w-full bg-slate-50 border border-slate-300 px-space-sm py-space-sm font-body-sm text-body-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:bg-white" id="contactPhone" placeholder="+48 000 000 000" required="" type="tel"/>
+                  </div>
+                  <div class="space-y-space-xs">
+                    <label class="font-label-sm text-label-sm text-slate-800 font-semibold" for="productCategory">Kategoria Produktu</label>
+                    <select class="w-full bg-slate-50 border border-slate-300 px-space-sm py-space-sm font-body-sm text-body-sm text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white" id="productCategory">
+                      <option value="zawiasy">Zawiasy Hydrauliczne Clip-On fi 35</option>
+                      <option value="prowadnice">Prowadnice Kulkowe H-45 (250-700mm)</option>
+                      <option value="minifix">Złącza Mimośrodowe Minifix fi 15</option>
+                      <option value="oem">Wytłoczki i Oprzyrządowanie wg Rysunku CAD</option>
+                      <option value="mix">Zamówienie Mieszane / Hurtownia</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="space-y-space-xs">
+                  <label class="font-label-sm text-label-sm text-slate-800 font-semibold" for="estimatedVolume">Szacowany Wolumen Kwartalny</label>
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+                    <label class="flex items-center gap-space-xs p-space-xs bg-slate-50 border border-slate-200 cursor-pointer text-body-sm hover:border-blue-400">
+                      <input checked="" class="text-blue-600 focus:ring-blue-500" name="volume" type="radio" value="trial"/>
+                      <span>Próbna (50–250 szt)</span>
+                    </label>
+                    <label class="flex items-center gap-space-xs p-space-xs bg-slate-50 border border-slate-200 cursor-pointer text-body-sm hover:border-blue-400">
+                      <input class="text-blue-600 focus:ring-blue-500" name="volume" type="radio" value="tier1"/>
+                      <span>1 000 – 5 000 szt</span>
+                    </label>
+                    <label class="flex items-center gap-space-xs p-space-xs bg-slate-50 border border-slate-200 cursor-pointer text-body-sm hover:border-blue-400">
+                      <input class="text-blue-600 focus:ring-blue-500" name="volume" type="radio" value="tier2"/>
+                      <span>5 000 – 20 000 szt</span>
+                    </label>
+                    <label class="flex items-center gap-space-xs p-space-xs bg-slate-50 border border-slate-200 cursor-pointer text-body-sm hover:border-blue-400">
+                      <input class="text-blue-600 focus:ring-blue-500" name="volume" type="radio" value="tier3"/>
+                      <span>Palety (&gt;20k szt)</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="space-y-space-xs">
+                  <label class="font-label-sm text-label-sm text-slate-800 font-semibold" for="projectSpecs">Wymiary, kąty, długości lub uwagi do wyceny</label>
+                  <textarea class="w-full bg-slate-50 border border-slate-300 px-space-sm py-space-sm font-body-sm text-body-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:bg-white" id="projectSpecs" placeholder="Podaj specyfikację: np. 200 kompletów prowadnic H-45 L=500mm z cichym domykiem, 800 szt. zawiasów z prowadnikiem 3D..." rows="3"></textarea>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs">
+                  <button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-sm bg-blue-600 text-white font-label-md text-label-md hover:bg-blue-700 transition-colors shadow-sm" type="submit">
+                    <span>Wyślij Zapytanie Ofertowe</span>
+                    <span class="material-symbols-outlined text-base">send</span>
+                  </button>
+                  <span class="font-body-sm text-body-sm text-slate-600">Bezpośrednia odpowiedź telefoniczna lub mailowa</span>
+                </div>
+                <!-- Feedback banner -->
+                <div class="hidden p-space-sm bg-blue-50 border border-blue-200 text-blue-900 font-body-sm text-body-sm flex items-center gap-space-xs" id="formSuccess">
+                  <span class="material-symbols-outlined text-blue-700">check_circle</span>
+                  <span>Dziękujemy! Zapytanie zostało przesłane. Skontaktujemy się z Państwem telefonicznie lub mailowo z ofertą.</span>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 border-t m-0"/>
+
+      <!-- Logistics & Location Map -->
+      <section class="w-full bg-slate-100 py-space-xl">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+            
+            <div class="lg:col-span-5 space-y-space-md">
+              <div class="space-y-space-xs">
+                <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-blue-700 font-semibold">
+                  <span class="w-3 h-0.5 bg-blue-600"></span>
+                  <span>Logistyka i Baza Załadunkowa</span>
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-slate-900 tracking-tight">
+                  W Sercu Małopolskiego Okręgu Meblarskiego
+                </h2>
+                <p class="font-body-md text-body-md text-slate-600 max-w-prose">
+                  Zakład w Polance k. Myślenic zlokalizowany jest zaledwie 800 metrów od węzła drogi krajowej DK7 (Zakopianka). Gwarantuje to szybki i sprawny transport oraz wygodny odbiór zamówień paletowych i drobnicowych.
+                </p>
+              </div>
+
+              <div class="space-y-space-xs font-body-sm text-body-sm text-slate-700">
+                <div class="flex items-start gap-space-xs">
+                  <span class="material-symbols-outlined text-blue-700 text-base mt-0.5">location_on</span>
+                  <div>
+                    <p class="font-semibold text-slate-900">Baza Magazynowa i Załadunkowa:</p>
+                    <p>Polanka 375, 32-400 Myślenice (wygodny dojazd i plac załadunkowy)</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-space-xs">
+                  <span class="material-symbols-outlined text-blue-700 text-base mt-0.5">schedule</span>
+                  <div>
+                    <p class="font-semibold text-slate-900">Godziny Pracy i Odbioru Towaru:</p>
+                    <p>Poniedziałek – Czwartek: 07:00 – 16:00 | Piątek: 07:00 – 14:00 (Sob – Nd: nieczynne)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trust Badge -->
+              <div class="p-space-sm flex items-center justify-between">
+                <div>
+                  <span class="font-label-md text-label-md text-blue-700 font-bold block">Ponad 20 Lat</span>
+                  <span class="font-body-sm text-body-sm text-slate-600">Doświadczenia na rynku okuć i elementów meblowych</span>
+                </div>
+                <span class="font-display-lg text-display-lg text-slate-300 font-bold">2004</span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="relative bg-white border border-slate-300 shadow-sm overflow-hidden">
+                <div class="w-full h-80 bg-cover bg-center" data-alt="Technical blueprint style aerial satellite view of industrial warehouse and precision metal factory at Polanka near Krakow and Zakopianka highway in Poland surrounded by manufacturing equipment transport vehicles" data-location="Polanka 375, 32-400 Myślenice, Poland" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqkKMDvS_78QE-xOuHj12TMjwF6MlUpoQo-XeDeokRps00oieUWpqS76OAIvotot0joKwE1ugnMpMUmCnKvcMJt1-LLgHRtfvhP78xCR-hI1DPu8fXIlU7UU7Wp8i_qHh0v9Z7AXodn6Nqi3qknU8nUX2Ulaa3AYfEHcQU4qIfyw4rnYhnUSmp5GmVdWNaBqOuhAMGrb4QazCeHwqRw71qbAIdFx6-9ulI8UfAOZHwJHwXYS1xuckA')"></div>
+                <div class="p-space-sm flex flex-wrap items-center justify-between gap-space-sm font-body-sm text-body-sm text-slate-800">
+                  <span class="flex items-center gap-space-xs font-semibold">
+                    <span class="w-2 h-2 bg-blue-600 inline-block"></span> Polanka 375 (32-400 Myślenice)
+                  </span>
+                  <span class="text-blue-700 font-semibold">GPS: 49.8524° N, 19.9328° E</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Final High-Contrast CTA Bar -->
+      <section class="w-full bg-slate-900 text-white py-space-lg">
+        <div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md">
+          <div class="space-y-space-xs text-center md:text-left">
+            <span class="font-label-sm text-label-sm text-blue-300 font-semibold">Fabryka Okuć Meblowych • MAT-MAR &amp; Wamet Polska</span>
+            <h3 class="font-headline-md text-headline-md text-white">
+              Masz projekt produkcyjny? Skonsultuj specyfikację z fabryką.
+            </h3>
+          </div>
+          <div class="flex items-center gap-space-sm">
+            <a class="px-space-lg py-space-sm bg-blue-600 text-white font-label-md text-label-md hover:bg-blue-700 transition-colors shadow-sm" href="tel:+48539179580">
+              Zadzwoń: +48 539 179 580
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-slate-950 text-slate-300 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-gutter pt-space-xl pb-space-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl">
+        
+        <div class="lg:col-span-2 space-y-space-md">
+          <div class="flex items-center gap-space-sm">
+            <div class="h-12 w-12 bg-white flex items-center justify-center p-1 shrink-0 overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNNGiXwo9OnJLGCuei_J1zaAVKxv3kXI9ej5WnkYT9I_eF73mKhHDE-JNMGJqVQWPzF1Z0W45ErGya28K-588bigRh-PdsADxx67uDxKLm1aeBChWmBSS97UWPT69lCJuF5pWhmpYhHjGBlKWQP9wNDsDKpnbU1LY_euejls3RiPektE7ioPZ643kGmAyuZwHVnnQ3fldhfDJQH7xpxvcdY4B9G2x6RHXeY0hAKoeGgYR_BkXPxV9qGxPwqnVqRjTwzA" alt="MAT-MAR &amp; Wamet Logo" class="h-full w-full object-contain"/>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-headline-sm uppercase tracking-tight text-white leading-none">MAT-MAR</span>
+              <span class="font-label-sm text-label-sm text-blue-400 font-semibold tracking-normal">&amp; WAMET POLSKA SYSTEMY OKUĆ</span>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-slate-300 max-w-sm">
+            Wysokoprecyzyjna produkcja komponentów stalowych, okuć meblowych, zawiasów, łączników konstrukcyjnych i systemów montażowych dla przemysłu meblarskiego w Europie Środkowej. Rok założenia 2004.
+          </p>
+          <div class="space-y-1 font-body-sm text-body-sm text-slate-300 border-t border-slate-800 pt-space-sm">
+            <div class="flex justify-between">
+              <span class="text-slate-400 font-medium">NIP:</span>
+              <span class="text-slate-200">6811208594</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400 font-medium">REGON:</span>
+              <span class="text-slate-200">356866962</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400 font-medium">Kod zakładu:</span>
+              <span class="text-slate-200">PL-32-400 / MAT-MAR 01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h4 class="font-label-md text-label-md text-white">Program Produkcji</h4>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-slate-300">
+            <li><a class="hover:text-blue-400 transition-colors" data-path="katalog-okuc" href="#">Kątowniki i Łączniki Stalowe</a></li>
+            <li><a class="hover:text-blue-400 transition-colors" data-path="katalog-okuc" href="#">Okucia Konstrukcyjne &amp; Ramowe</a></li>
+            <li><a class="hover:text-blue-400 transition-colors" data-path="katalog-okuc" href="#">Elementy Tłoczone i Wykrawane</a></li>
+            <li><a class="hover:text-blue-400 transition-colors" data-path="katalog-okuc" href="#">Ślizgacze, Stopki &amp; Profile</a></li>
+            <li><a class="hover:text-blue-400 transition-colors" data-path="park-maszynowy-produkcja" href="#">Kooperacja CNC &amp; Tłoczniki OEM</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h4 class="font-label-md text-label-md text-white">Fabryka &amp; Adres</h4>
+          <div class="space-y-space-xs font-body-sm text-body-sm text-slate-300">
+            <p class="text-white font-semibold">MAT-MAR Wamet Zakład Produkcyjny</p>
+            <p>Polanka 375</p>
+            <p>32-400 Myślenice, Polska</p>
+            <div class="pt-space-xs">
+              <p class="font-label-sm text-label-sm text-slate-200 font-semibold">Godziny Pracy Zakładu:</p>
+              <p class="text-body-sm text-slate-300">Pn – Czw: 07:00 – 16:00<br/>Pt: 07:00 – 14:00 (Sob – Nd: nieczynne)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h4 class="font-label-md text-label-md text-white">Kontrola &amp; Standardy</h4>
+          <div class="space-y-space-sm font-body-sm text-body-sm text-slate-300">
+            <div class="border-l-2 border-blue-500 pl-space-xs">
+              <span class="block text-white font-semibold">Polska Produkcja</span>
+              <span class="text-slate-400">Okucia i podzespoły z atestowanej stali</span>
+            </div>
+            <div class="border-l-2 border-blue-500 pl-space-xs">
+              <span class="block text-white font-semibold">EN 10204 / 3.1</span>
+              <span class="text-slate-400">Atesty hutnicze na stale konstrukcyjne</span>
+            </div>
+            <div class="border-l-2 border-blue-500 pl-space-xs">
+              <span class="block text-white font-semibold">Kontrola Jakości</span>
+              <span class="text-slate-400">Rygorystyczna selekcja każdej partii</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-space-lg border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-slate-400">
+        <p>© 2004–2026 MAT-MAR &amp; Wamet Myślenice. Wszelkie prawa zastrzeżone.</p>
+        <div class="flex items-center gap-space-lg">
+          <a class="hover:text-blue-400 transition-colors" href="#">Karty Techniczne &amp; CAD</a>
+          <a class="hover:text-blue-400 transition-colors" href="#">Polityka Prywatności</a>
+          <a class="hover:text-blue-400 transition-colors" href="#">Regulamin B2B</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
